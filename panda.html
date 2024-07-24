@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assent/css/styles.css">
+    <link rel="stylesheet" href="./assent/css/musica.css">
+
+    <style>
+        .video-carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .video-carousel video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-wrapper {
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .play-button:focus {
+            outline: none;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="letra titulo a">Feliz Cumpleaños</h1>
+        <p class="date titulo"><b>07/08/2024</b> </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container">
+                <button id="playButton">Reproducir/Pausar Canción</button>
+                <audio id="audio" src="./assent/audio/Starship - Nothing s Gonna Stop Us Now (Official Music Video) [HD].mp3"></audio>
+            </div>
+            <div class="card" style="background-image: url('./assent/img/imagen1.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen2.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen3.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen4.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen5.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen6.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen7.JPG');"></div>
+      
+
+           
+        </div>
+        
+        <div class="letter-container mt-5">
+            <h2 class="titulo2">Mi Carta para Ti</h2>
+            <div class="letter-content">
+          
+                <p>Querido Gerardo</p>
+                <p>En este día tan especial como lo es tu cumpleaños quiero desearte mucha felicidad, paz y amor para este día y todos los días de tu vida. Quiero que sepas que eres una persona muy importante para mí y aunque este no sea un detalle tan grande, te lo entrego con mucho cariño.</p>
+                <p> Estoy muy orgullosa de ti en todos los sentidos, que sepas que me tendrás aquí para ti para apoyarte en todo, seré tu pesadilla bonita hasta que me lo permitas jaja. Eres un hombre increíble, y me encanta mucho tu sonrisa. 
+                    Que sigas cumpliendo muchos años más, y espero pasar más cumpleaños a tu lado para celebrar lo bonito que es la vida a pesar de las adversidades. 
+                    Te adoro y te extraño un montón.
+                    Atentamente,</p>
+             
+
+               <p>Ambar Alvarez.</p>
+              
+             
+            </div>
+        </div>
+
+     <!-- Video centrado -->
+     <div class="container mt-5 video-carousel">
+        <h2 class=" highlight-title text-center "></h2>
+        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="video-wrapper">
+                        <video id="video1" class="video-responsive" controls>
+                            <source src="./assent/videos/video1.MOV" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <button class="play-button" onclick="playPause('video1')">&#9658;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./assent/js/script.js"></script>
+<script>
+    // Función playPause para el video
+    function playPause(videoId) {
+        var video = document.getElementById(videoId);
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+</script>
+</body>
+</html>

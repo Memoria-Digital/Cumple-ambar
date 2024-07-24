@@ -1,0 +1,108 @@
+/* Existing CSS s */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2b47a3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/DDDD.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-attachment: fixed; /* Fija la imagen para evitar el movimiento */
+}
+
+/* Media query para pantallas grandes (PC)  bodrrar cualquier cosaco*/
+@media only screen and (min-width: 768px) {
+  body {
+    background-repeat: repeat; /* Permite que la imagen de fondo se duplique */
+  }
+}
+
+
+
+.container {
+  height: 31.25em;
+  width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center; /* Center the image */
+}
+form {
+  width: 23.75em;
+  height: 18.75em;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 5.5em); /* Adjusted to make room for the image */
+  left: 50%;
+  padding: 0 3.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+form label {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  color: #030000;
+  text-align: left; /* Align label text to the left */
+  
+}
+form input {
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #3f3554;
+  padding: 0.3em;
+  border: none;
+  border-bottom: 0.12em solid #6f52ad;
+  outline: none;
+  width: 100%; /* Make input fill the width */
+}
+form input:focus {
+  border-color: #4e5aca;
+}
+form input:not(:last-child) {
+  margin-bottom: 0.9em;
+}
+form button {
+  font-size: 0.95em;
+  padding: 0.8em 0;
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  background-color: #4f82e0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-top: 0.8em;
+}
+.error-message {
+  color: red;
+  margin-top: 5px;
+  text-align: center; /* Center the text */
+}
+@media screen and (max-width: 500px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
+/* New CSS */
+.form-image {
+  width:80%; /* Adjust the percentage as needed */
+  height: auto;
+  margin-bottom: 1em; /* Space between image and form */
+  
+}

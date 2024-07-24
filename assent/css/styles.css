@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2b47a3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/DDDD.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen para evitar el movimiento */
+  }
+  
+  /* Media query para pantallas grandes (PC)  bodrrar cualquier cosaco*/
+  @media only screen and (min-width: 768px) {
+    body {
+      background-repeat: repeat; /* Permite que la imagen de fondo se duplique */
+    }
+  }
+header {
+    background-color: #767ece;
+    text-align: center;
+    padding: 1em;
+}
+.titulo {
+    margin: 0;
+    color: #ffffff; /* Blanco */
+    font-family: 'Poppins', sans-serif; /* Fuente atractiva */
+    font-size: 3em; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(248, 238, 248, 0.377); /* Sombra al texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-align: center; /* Centrar el texto */
+    background: linear-gradient(90deg, #e9e7e7, #f5f6f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titulo2 {
+    margin: 0;
+    color: #fff; /* Blanco */
+    font-family: 'Poppins', sans-serif; /* Fuente atractiva */
+    font-size: 2rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra al texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-align: center; /* Centrar el texto */
+    background: linear-gradient(90deg, #767ece, #767ece);
+  
+   
+}
+
+
+.date {
+    font-family: 'Cursive', sans-serif;
+    color: #ff69b4;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.letter-container {
+    text-align: center;
+    margin: 2em;
+}
+
+
+.letter-container h2 {
+    color: #f1f1f1;
+    
+    background-color: aliceblue;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.letter-content {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #717ba5;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.letter-content p {
+    margin: 10px 0;
+}
+.letra{
+    font-family: 'Amifer', sas-serif;
+}
